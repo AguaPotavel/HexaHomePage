@@ -8,13 +8,13 @@ import richarlisonPath from "../../Assets/richarlison-21.png";
 
 function Footer() {
   const Parent = {
-    hidden: { y: 200, opacity: 0 },
+    hidden: { y: 200 },
     show: {
       y: 0,
       opacity: 1,
       transition: {
-        delay: 1,
-        delayChildren: 0.7,
+        delay: 2.4,
+        delayChildren: 2.7,
       },
     },
   };
@@ -45,9 +45,13 @@ function Footer() {
           <span>/10</span>
         </div>
         <div className="ListPlayer">
-          {Players.map((player) => {
+          {Players.map((player, index) => {
             return (
-              <PlayerWikiItem Player={player.name} imagePath={player.path} />
+              <PlayerWikiItem
+                Player={player.name}
+                imagePath={player.path}
+                key={index}
+              />
             );
           })}
         </div>

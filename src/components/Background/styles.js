@@ -13,12 +13,13 @@ export const Wrapper = styled(motion.div)`
   overflow: hidden;
 `;
 
-export const DiagonalLine = styled(motion.div)`
-  min-width: 20vw;
-  margin-right: 20vw;
-  min-height: 300%;
+export const DiagonalLine = styled(motion.li)`
+  position: absolute;
+  left: ${({ left }) => left}vw;
+  min-width: 100vw;
+  min-height: 100vh;
   border-left: 0.1px solid black;
-  border-right: 0.1px solid black;
   opacity: 0.1;
-  transform: rotate(20deg);
+  clip-path: polygon(70% 0, 70.1% 0, 38% 100%, 37.9% 100%);
+  background-color: black;
 `;

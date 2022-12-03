@@ -5,12 +5,12 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 
 function Header() {
   const Parent = {
-    hidden: { y: -200, opacity: 0 },
+    hidden: { y: -200 },
     show: {
       y: 0,
       opacity: 1,
       transition: {
-        delay: 1,
+        delay: 2.4,
         delayChildren: 0.7,
       },
     },

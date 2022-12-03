@@ -8,8 +8,8 @@ function Background() {
       y: 0,
       opacity: 1,
       transition: {
-        delay: 1,
-        delayChildren: 0.7,
+        delay: 2.4,
+        delayChildren: 2.7,
       },
     },
   };
@@ -23,9 +23,10 @@ function Background() {
 
   return (
     <Wrapper variants={Parent} initial="hidden" animate="show">
-      <DiagonalLine variants={Child} />
-      <DiagonalLine variants={Child} />
-      <DiagonalLine variants={Child} />
+      <DiagonalLine variants={Child} left={20} />
+      <DiagonalLine variants={Child} left={-50} />
+      <DiagonalLine variants={Child} left={-25} />
+      <DiagonalLine variants={Child} left={50} />
     </Wrapper>
   );
 }

@@ -8,8 +8,9 @@ function SideItem() {
       x: 0,
       opacity: 1,
       transition: {
-        delay: 1,
-        delayChildren: 0.7,
+        delay: 2.4,
+        delayChildren: 2.7,
+        staggerChildren: 0.5,
       },
     },
   };

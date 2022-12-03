@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import SideItem from "./components/SideItem";
 import Footer from "./components/Footer";
 import Background from "./components/Background";
+import InnerContent from "./components/InnerContent";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <SideItem />
       <Footer />
       <Background />
+      <InnerContent />
     </div>
   );
 }
