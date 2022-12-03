@@ -30,14 +30,14 @@ function InnerContent() {
   };
 
   const pngAnimation = {
-    hidden: { scale: 1.1 },
+    hidden: { scale: 1.3 },
     show: {
       scale: 1,
       transition: {
         delay: 0,
         delayChildren: 0,
         duration: 3,
-        type: "spring",
+        type: "ease",
       },
     },
   };

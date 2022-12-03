@@ -7,5 +7,6 @@ export const theme = {
   fonts: {
     normal: `'Alexandria', sans-serif`,
     banner: `'Fugaz One', cursive`,
+    outline: `'Londrina Outline', cursive`,
   },
 };
